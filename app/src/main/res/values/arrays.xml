@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--{{"Jakarta Barat","Jakarta Pusat","Jakarta Selatan","Jakarta Timur","Jakarta Utara"},
+    {"Bandung","Cirebon","Bekasi"},
+    {"Semarang","Magelang","Surakarta"},
+    {"Surabaya","Malang","Blitar"},
+    {"Denpasar"}};-->
+    <string-array name="provinsi">
+        <item> Jakarta Timur  </item>
+        <item> Jakarta Barat </item>
+        <item> Jakarta Pusat </item>
+        <item>Jakarta Selatan </item>
+        <item> Jakarta Utara</item>
+        <item> Bandung</item>
+        <item> Cirebon</item>
+        <item> Bekasi</item>
+        <item> Tanggerang</item>
+        <item> Semarang </item>
+        <item> Magelang </item>
+        <item> Surakarta</item>
+        <item> Malang </item>
+        <item> Surabaya</item>
+        <item> Blitar</item>
+        <item> Kediri</item>
+        <item> Denpasar </item>
+        <item> Tabanan</item>
+    </string-array>
+</resources>

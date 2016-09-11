@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             hasil = rbLK.getText().toString();
         }
         if (hasil == null) {
-            tvHasil.setText("Anda belum memilih Status");
+            tvHasil.setText("Anda belum memilih Jenis Kelamin");
         } else {
             tvHasil.setText("\nAnda Seorang : " + hasil);
         }

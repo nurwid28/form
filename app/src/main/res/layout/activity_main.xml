@@ -16,8 +16,10 @@
         tools:context="id.sch.smktelkom_mlg.tugas01.xirpl3025.form.MainActivity">
 
         <TextView
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
             android:layout_width="354dp"
-            android:layout_height="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="0.04"
             android:fontFamily="GeoSlab703 MdCn BT"
             android:text="NWA-PRIVATE QURAN"
@@ -26,104 +28,190 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="2dp"
             android:src="@drawable/q" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Text" />
-
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewData"
+            android:layout_width="177dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="DATA PENDAFTAR"
+            android:textAlignment="center" />
 
         <TextView
+            android:id="@+id/textViewLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:text="Lokasi" />
+
+        <Spinner
+            android:id="@+id/spinnerProvinsi"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:entries="@array/provinsi" />
+
+        <TextView
+
             android:id="@+id/textViewNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
             android:text="Nama" />
 
+
         <EditText
+
             android:id="@+id/editTextNama"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.00" />
+            android:layout_height="wrap_content" />
+
 
         <TextView
+
             android:id="@+id/textViewNomor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
             android:text="Nomor Telepon" />
 
+
         <EditText
+
             android:id="@+id/editTextTelpon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.00" />
+            android:inputType="numberSigned" />
+
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewAlamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:text="New Text" />
+            android:text="Alamat" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editTextAlamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.04" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.06"
+            android:layout_height="77dp"
+            android:layout_margin="2dp"
             android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/checkBox"
+            <TextView
+                android:id="@+id/textViewJnsKelamin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New CheckBox" />
+                android:text="Jenis Kelamin" />
 
-            <CheckBox
-                android:id="@+id/checkBox2"
+            <RadioGroup
+                android:id="@+id/RadioGroupJnsKelamin"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New CheckBox" />
+                android:layout_height="wrap_content">
 
-            <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New CheckBox" />
+                <RadioButton
+                    android:id="@+id/radioButtonPR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Perempuan" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonLK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Laki-laki" />
+            </RadioGroup>
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewHari"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:text="New Text" />
+            android:text="Pilih Hari" />
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="2dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxSnn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Senin" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Selasa" />
+
+            <CheckBox
+                android:id="@+id/checkBoxRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Rabu" />
+
+            <CheckBox
+                android:id="@+id/checkBoxKms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Kamis" />
+
+            <CheckBox
+                android:id="@+id/checkBoxJmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Jumat" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewWaktu"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.27"
-            android:orientation="horizontal"></LinearLayout>
+            android:layout_weight="0.04"
+            android:text="Jam *max 2 jam, format 24 jam" />
+
+        <EditText
+            android:id="@+id/editTextWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:inputType="numberSigned" />
+
+        <Button
+            android:id="@+id/buttonOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04"
+            tools:text="Hasil" />
 
     </LinearLayout>
 
