@@ -1,0 +1,2 @@
+# form
+Saya membuat project form 'NWA-PRIVATE QURAN'. Pada project saya, anda akan menginputkan nama, nomer telpon, alamat, gender, pilih hari, dan pilih jam. Dimana apabila anda tidak menginputkan apa apa pada kolom isian nama, nomor telpon, alamat dan jam, maka akan ada tanda peringatan yang memperingati agar bawa anda belum mengisi kolom isian tersebut. Setelah semua terisi, saat anda meng-klik 'submit' maka data yang anda inputkan akan keluar di bawah button-submit
