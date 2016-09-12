@@ -35,21 +35,20 @@ public class MainActivity extends AppCompatActivity {
         cbSls = (CheckBox) findViewById(R.id.checkBoxSls);
         cbRb = (CheckBox) findViewById(R.id.checkBoxRb);
         cbKms = (CheckBox) findViewById(R.id.checkBoxKms);
-        cbJmt = (CheckBox) findViewById(R.id.checkBoxJmt);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
 
         bOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 doClick();
-                doGender();
-                doHari();
+                /*doGender();
+                doHari();*/
             }
         });
 
     }
 
-    private void doHari() {
+    /*private void doHari() {
         String hasil = "Hari yang anda pilih : \n";
         int startlen = hasil.length();
         if (cbSnn.isChecked()) hasil += cbSnn.getText() + "\n";
@@ -76,18 +75,65 @@ public class MainActivity extends AppCompatActivity {
             tvHasil.setText("\nAnda Seorang : " + hasil);
         }
     }
-
+*/
     private void doClick() {
-        tvHasil.setText("Anda Berada di Wilayah " + spProvinsi.getSelectedItem().toString());
-        if (isValid()) {
-            tvHasil.setText(" \nNama Anda : " + etNama.getText().toString() + " \nNomor Telpon anda : " + etNomor.getText().toString()
-                    + " \nAlamat Rumah Anda : " + etAlamat.getText().toString());
+        String lokasi = spProvinsi.getSelectedItem().toString();
+        String nama = etNama.getText().toString();
+        String nomor = etNomor.getText().toString();
+        String alamat = etAlamat.getText().toString();
+        String jam = etJam.getText().toString();
+        String hasil = null;
+        String cek = null;
 
+        if (nama.isEmpty()) {
+            etNama.setError("Harap isikan Nama Anda!!!");
+        } else {
+            etNama.setError(null);
         }
+        if (nomor.isEmpty()) {
+            etNomor.setError("Harap Masukkan Nomor Telpon!!!");
+        } else {
+            etNomor.setError(null);
+        }
+        if (alamat.isEmpty()) {
+            etAlamat.setError("Harap isikan Alamat Anda!!!");
+        } else {
+            etAlamat.setError(null);
+        }
+        if (rbPR.isChecked()) {
+            hasil = rbPR.getText().toString();
+        } else if (rbLK.isChecked()) {
+            hasil = rbLK.getText().toString();
+        }
+        if (cbSnn.isChecked()) {
+            cek = cbSnn.getText().toString();
+        } else if (cbSls.isChecked()) {
+            cek = cbSls.getText().toString();
+        } else if (cbRb.isChecked()) {
+            cek = cbRb.getText().toString();
+        } else if (cbKms.isChecked()) {
+            cek = cbKms.getText().toString();
+        }
+        if (jam.isEmpty()) {
+            etJam.setError("Harap isikan Alamat Anda!!!");
+        } else {
+            etJam.setError(null);
+        }
+
+        tvHasil.setText(" DATA PELANGGAN \n" +
+                "\n Anda Berada di " + lokasi + "\n Nama : " + nama + "\n Nomor Telpon : "
+                + nomor + "\n Alamat : " + alamat + "Jenis Kelamin : " + hasil +
+                "\n Pilihan Hari : " + cek + "\n Pilihan Jam Les : " + jam +
+                "\n\n\n SELAMAT ! DATA ANDA SUDAH TERKIRIM !!");
+        /*if (isValid()) {
+            tvHasil.setText(" \nNama Anda : " + etNama.getText().toString() + " \nNomor Telpon anda : " + etNomor.getText().toString()
+                    + " \nAlamat Rumah Anda : " + etAlamat.getText().toString());*//*
+
+        }*/
     }
 
 
-    protected boolean isValid() {
+    /*protected boolean isValid() {
         boolean valid = true;
 
         String nama = etNama.getText().toString();
@@ -121,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
             etJam.setError(null);
         }
         return valid;
-    }
+    }*/
 
 }
 

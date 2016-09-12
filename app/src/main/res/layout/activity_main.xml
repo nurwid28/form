@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Base.ThemeOverlay.AppCompat.Dark"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#263238">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -18,12 +20,15 @@
         <TextView
             style="@style/Base.TextAppearance.AppCompat.Subhead"
             android:layout_width="354dp"
-            android:layout_height="25dp"
+            android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.04"
+            android:layout_margin="1dp"
+            android:layout_weight="0.56"
+            android:background="#263238"
             android:fontFamily="GeoSlab703 MdCn BT"
             android:text="NWA-PRIVATE QURAN"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/bright_foreground_material_dark" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -39,44 +44,51 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:text="DATA PENDAFTAR"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/background_floating_material_light" />
 
         <TextView
             android:id="@+id/textViewLokasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:text="Lokasi" />
+            android:text="Lokasi"
+            android:textColor="@color/background_floating_material_light" />
 
         <Spinner
             android:id="@+id/spinnerProvinsi"
             android:layout_width="match_parent"
             android:layout_height="31dp"
+            android:background="#37474F"
             android:entries="@array/provinsi" />
 
         <TextView
-
             android:id="@+id/textViewNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:text="Nama" />
+            android:hint="Nama"
+            android:text="Nama"
+            android:textColor="#ffffff" />
 
 
         <EditText
 
             android:id="@+id/editTextNama"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="#37474F"
+            android:textColor="@android:color/primary_text_dark" />
 
 
         <TextView
-
             android:id="@+id/textViewNomor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:text="Nomor Telepon" />
+            android:hint="Nomor Telpon"
+            android:text="Nomor Telpon"
+            android:textColor="@color/background_floating_material_light" />
 
 
         <EditText
@@ -84,7 +96,9 @@
             android:id="@+id/editTextTelpon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberSigned" />
+            android:background="#37474F"
+            android:inputType="numberSigned"
+            android:textColor="@android:color/primary_text_dark" />
 
 
         <TextView
@@ -92,25 +106,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:text="Alamat" />
+            android:hint="Alamat"
+            android:text="Alamat"
+            android:textColor="@android:color/background_light" />
 
         <EditText
             android:id="@+id/editTextAlamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.04" />
+            android:layout_weight="0.04"
+            android:background="#37474F"
+            android:textColor="@android:color/primary_text_dark" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="77dp"
+            android:layout_height="wrap_content"
             android:layout_margin="2dp"
+            android:background="#37474F"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textViewJnsKelamin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jenis Kelamin" />
+                android:text="Jenis Kelamin"
+                android:textColor="@android:color/primary_text_dark" />
 
             <RadioGroup
                 android:id="@+id/RadioGroupJnsKelamin"
@@ -122,14 +142,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Perempuan" />
+                    android:text="Perempuan"
+                    android:textColor="@android:color/primary_text_dark" />
 
                 <RadioButton
                     android:id="@+id/radioButtonLK"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="Laki-laki" />
+                    android:text="Laki-laki"
+                    android:textColor="@android:color/primary_text_dark" />
             </RadioGroup>
 
         </LinearLayout>
@@ -139,12 +161,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:text="Pilih Hari" />
+            android:text="Pilih Hari"
+            android:textColor="@android:color/primary_text_dark" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:layout_margin="2dp"
+            android:background="#37474F"
             android:orientation="horizontal">
 
             <CheckBox
@@ -152,35 +176,33 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="Senin" />
+                android:text="Senin"
+                android:textColor="@android:color/primary_text_dark" />
 
             <CheckBox
                 android:id="@+id/checkBoxSls"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="Selasa" />
+                android:text="Selasa"
+                android:textColor="@android:color/primary_text_dark" />
 
             <CheckBox
                 android:id="@+id/checkBoxRb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="Rabu" />
+                android:text="Rabu"
+                android:textColor="@android:color/primary_text_dark" />
 
             <CheckBox
                 android:id="@+id/checkBoxKms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="Kamis" />
+                android:text="Kamis"
+                android:textColor="@android:color/primary_text_dark" />
 
-            <CheckBox
-                android:id="@+id/checkBoxJmt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:text="Jumat" />
         </LinearLayout>
 
         <TextView
@@ -188,14 +210,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:text="Jam *max 2 jam, format 24 jam" />
+            android:hint="Jam *max 2 jam, format 24 jam"
+            android:text="Jam *max 2 jam, format 24 jam"
+            android:textColor="@android:color/primary_text_dark" />
 
         <EditText
             android:id="@+id/editTextWaktu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.04"
-            android:inputType="numberSigned" />
+            android:background="#37474F"
+            android:textColor="@android:color/primary_text_dark" />
 
         <Button
             android:id="@+id/buttonOK"
@@ -203,7 +228,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.04"
-            android:text="Submit" />
+            android:background="#18FFFF"
+            android:text="Submit"
+            android:textColor="#263238"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/textViewHasil"
@@ -211,6 +239,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.04"
+            android:textAlignment="center"
+            android:textColor="@android:color/primary_text_dark"
             tools:text="Hasil" />
 
     </LinearLayout>
